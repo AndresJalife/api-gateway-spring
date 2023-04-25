@@ -15,6 +15,9 @@ import reactor.core.publisher.Mono;
 import java.util.ArrayList;
 import java.util.Collection;
 
+/**
+ * Service that handles the user requests
+ */
 @Service
 @RequiredArgsConstructor
 @Slf4j
@@ -23,7 +26,12 @@ public class UserService {
     private final UserRoleRepository userRoleRepository;
     private final RoleRepository roleRepository;
 
-
+    /**
+     * Receives a username and returns a User saved in the database
+     *
+     * @param username  Username
+     * @return          User
+     */
     @Transactional(readOnly = true)
     public Mono<User> getUser(String username) {
         return userRepo.findByUsername(username)
@@ -34,6 +42,11 @@ public class UserService {
                         .thenReturn(user));
     }
 
+    /**
+     * Gets the user details from a user.
+     * @param user User
+     * @return UserDetails
+     */
     @Transactional(readOnly = true)
     public Mono<UserDetails> getUserDetails(User user) {
         return Mono.just(user)

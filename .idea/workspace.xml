@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b997e0fe-6473-490b-90c6-47d7e6cee0e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/dto/LoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/exception/UserLoggedInError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/model/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/repository/UserRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/service/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/service/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/service/LoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/service/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/service/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/service/UserService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +101,7 @@
       <workItem from="1681776846797" duration="1276000" />
       <workItem from="1682262993037" duration="347000" />
       <workItem from="1682263364953" duration="4719000" />
-      <workItem from="1682383804233" duration="1215000" />
+      <workItem from="1682383804233" duration="1698000" />
     </task>
     <servers />
   </component>
