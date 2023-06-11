@@ -31,7 +31,7 @@ public class LoginService {
      * Login method that returns the credentials if the user exists and the password is correct.
      *
      * @param request http request
-     * @param form Login form
+     * @param form    Login form
      * @return Login and user information.
      */
     public Mono<Map<String, Object>> login(ServerHttpRequest request, LoginDTO form) {
@@ -39,7 +39,7 @@ public class LoginService {
                 .flatMap(user -> userService.getUserDetails(user)
                         .filter(userDetails -> passwordEncoder.matches(form.getPassword(), userDetails.getPassword()))
                         .flatMap(userDetails -> getLoginCredentials(request,
-                                        userDetails)))
+                                userDetails)))
                 .switchIfEmpty(Mono.defer(() -> {
                     log.error("User not found");
                     return Mono.error(new UsernameNotFoundException("Username not found"));
@@ -49,7 +49,7 @@ public class LoginService {
     /**
      * Creates the credentials for the user.
      *
-     * @param request http request
+     * @param request     http request
      * @param userDetails user details
      * @return Login and user information.
      */
