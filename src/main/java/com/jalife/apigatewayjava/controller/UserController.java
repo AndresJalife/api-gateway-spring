@@ -20,6 +20,7 @@ public class UserController {
 
     /**
      * Endpoint for saving a user.
+     *
      * @param user User to save
      */
     @PostMapping("/user")
@@ -30,6 +31,7 @@ public class UserController {
 
     /**
      * Endpoint for deleting a user.
+     *
      * @param userId Id of the user to delete
      */
     @DeleteMapping("/user")
@@ -40,6 +42,7 @@ public class UserController {
 
     /**
      * Endpoint for editing a user.
+     *
      * @param user User to edit
      */
     @PatchMapping("/user")
@@ -51,6 +54,7 @@ public class UserController {
 
     /**
      * Updates the password of a user
+     *
      * @param passwordDTO DTO containing the user id and the new password
      */
     @PatchMapping("/user/password")

@@ -19,7 +19,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import reactor.core.publisher.Mono;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * Service that handles the user requests
@@ -76,12 +77,13 @@ public class UserService {
                     user.setPassword(passwordEncoder.encode(user.getPassword()));
                     userRepo.save(user);
                     return Mono.just(userDTO);
-                }});
+                }
             });
+        });
     }
 
     /**
-     *  Deletes a user from the database
+     * Deletes a user from the database
      */
     @Transactional
     public Mono<Long> deleteUser(Long userId) {
@@ -97,7 +99,7 @@ public class UserService {
     }
 
     /**
-     *  Edits a user from the database
+     * Edits a user from the database
      */
     @Transactional
     public Mono<UserDTO> editUser(UserDTO userDTO) {
@@ -115,7 +117,7 @@ public class UserService {
     }
 
     /**
-     *  Updates a user's password
+     * Updates a user's password
      */
     @Transactional
     public Mono<Void> updatePassword(PasswordDTO passwordDTO) {
@@ -134,7 +136,7 @@ public class UserService {
     }
 
     /**
-     *  Gets a user by id
+     * Gets a user by id
      */
     @Transactional(readOnly = true)
     public Mono<User> getUserById(Long id) {
