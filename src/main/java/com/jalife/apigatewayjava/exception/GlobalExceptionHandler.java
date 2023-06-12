@@ -1,5 +1,6 @@
-package com.jalife.apigatewayjava.Util;
+package com.jalife.apigatewayjava.exception;
 
+import com.jalife.apigatewayjava.Util.ResponseWritter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.web.reactive.error.ErrorWebExceptionHandler;
 import org.springframework.http.HttpStatus;

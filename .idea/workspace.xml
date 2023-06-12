@@ -5,19 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b997e0fe-6473-490b-90c6-47d7e6cee0e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/Util/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/Util/ResponseWritter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/configuration/HttpToHttpsRedirectConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/controller/TokenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/dto/RefreshTokenDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/dto/user/PasswordDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/dto/user/RoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/dto/user/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/exception/OldAndNewPasswordsTheSameException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/exception/PasswordsDontMatchException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/exception/UserAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/exception/UserNotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/Util/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/controller/TokenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/controller/TokenController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/model/UserRole.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/repository/UserRoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +67,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "/home/ajalife/Desktop/Andy/Proyectos/api-gateway-java/src/main/java/com/jalife/apigatewayjava",
+    "last_opened_file_path": "/home/ajalife/Desktop/Andy/Proyectos/api-gateway-java/src/main/java/com/jalife/apigatewayjava/exception",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -83,17 +86,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/exception" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/dto" />
       <recent name="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava" />
       <recent name="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/repository" />
       <recent name="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/model" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/jalife/apigatewayjava/controller" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.jalife.apigatewayjava.dto" />
-      <recent name="com.jalife.apigatewayjava.controller" />
-      <recent name="com.jalife.apigatewayjava.repository" />
-      <recent name="com.jalife.apigatewayjava.model" />
+      <recent name="com.jalife.apigatewayjava.exception" />
+      <recent name="com.jalife.apigatewayjava.dto.user" />
       <recent name="com.jalife.apigatewayjava.service" />
+      <recent name="com.jalife.apigatewayjava.controller" />
+      <recent name="com.jalife.apigatewayjava.dto" />
     </key>
   </component>
   <component name="RunManager">
@@ -117,7 +121,7 @@
       <workItem from="1682262993037" duration="347000" />
       <workItem from="1682263364953" duration="4719000" />
       <workItem from="1682383804233" duration="2695000" />
-      <workItem from="1686415308722" duration="3780000" />
+      <workItem from="1686415308722" duration="10071000" />
     </task>
     <servers />
   </component>

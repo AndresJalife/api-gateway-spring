@@ -3,6 +3,7 @@ package com.jalife.apigatewayjava.controller;
 import com.jalife.apigatewayjava.dto.LoginDTO;
 import com.jalife.apigatewayjava.service.LoginService;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.server.reactive.ServerHttpRequest;
@@ -19,6 +20,7 @@ import java.util.Map;
  */
 @AllArgsConstructor
 @RestController
+@Slf4j
 public class LoginController {
     private final LoginService loginService;
 
@@ -34,6 +36,7 @@ public class LoginController {
     @PostMapping("/login")
     public Mono<ResponseEntity<Map<String, Object>>> login(ServerHttpRequest request,
                                                            @RequestBody LoginDTO form) {
+        log.info("Login request received from user: {}", form.getUsername());
         return loginService.login(request, form)
                 .map(ResponseEntity::ok)
                 .switchIfEmpty(Mono.just(ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(getInvalidUserErrorMessage())));

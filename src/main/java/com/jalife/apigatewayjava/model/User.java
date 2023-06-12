@@ -1,5 +1,6 @@
 package com.jalife.apigatewayjava.model;
 
+import com.jalife.apigatewayjava.dto.user.UserDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,4 +24,13 @@ public class User {
 
     @Transient
     private Role role;
+
+    public User(UserDTO userDTO, Role role) {
+        this.userId = userDTO.getId();
+        this.name = userDTO.getName();
+        this.username = userDTO.getUsername();
+        this.password = userDTO.getPassword();
+        this.email = userDTO.getEmail();
+        this.role = role;
+    }
 }

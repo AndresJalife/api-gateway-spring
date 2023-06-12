@@ -45,6 +45,7 @@ public class TokenController {
     @PostMapping("/token/refresh")
     public Mono<Void> refreshToken(ServerHttpRequest request,
                                    ServerHttpResponse response, @RequestBody RefreshTokenDTO tokensForm) {
+        log.info("Refreshing token");
         try {
             Algorithm algorithm = Algorithm.HMAC256(securityWord.getBytes());
             JWTVerifier verifier = JWT.require(algorithm).build();
